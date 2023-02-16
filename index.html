@@ -60,11 +60,24 @@
             </p>
         </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         const footer = document.querySelector(".visible");
         const size = screen.width;
         if (size < 900) {
             footer.setAttribute("class", "invisible");
         }
+        const btn = document.querySelector(".prize__btn");
+        btn.addEventListener("click", function () {
+            Swal.fire({
+                title: "Que apretas culiao!!",
+                confirmButtonText: "Yella",
+                confirmButtonColor: "hsl(179, 62%, 43%, 0.8)",
+                imageUrl: "./assets/Messi-.webp",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Messi enojado",
+            });
+        });
     </script>
 </html>
